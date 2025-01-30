@@ -45,7 +45,7 @@ Below are some images demonstrating the prediction process:
   ![Prediction Example](images/Image2.jpg)
 
  **Webpage Gif**:
-  ![Demo](images/Webpage-demo.mp4)
+  ![Demo](images/webpage-demo.mp4)
 
 ## Future Work
 
