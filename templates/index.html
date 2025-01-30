@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Sign_lang_Rec</title>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="header-nav">
+            <ul class="nav-ul">
+                <li><span class="nav-span h4">Sign Language Recognition</span></li>
+                <li> <a href="#home" class="nav-li fw-bold">Home</a></li>
+                <li> <a href="#about" class="nav-li fw-bold">About</a></li>
+                <li><a href="#sampleimage" class="nav-li fw-bold">SampleImages</a></li>
+                <li><a href="#prediction" class="nav-li fw-bold">Prediction</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="main">
+            <h1 class="main-h1">WELCOME TO SIGNTALK</h1>
+            <img src="/static/images/slrimage.jpeg" alt="not loaded" class="img-slr">
+        </section>
+        
+
+        <section id="about" class="about">
+            <div class="about-div">
+                <div class="about-div1">What is Sign Language Recognition and its imporatant?</div>
+                <div class="about-div2">Sign language recognition (SLR) is a technology that enables computers to interpret and understand sign languages used by the deaf and hard-of-hearing community. It combines computer vision and machine learning to analyze gestures, hand movements, facial expressions to accurately translate them into spoken or written language.
+                    <br>
+                    <li class="div-li">Bridging the Communication Gap:It allows seamless communication between people with hearing impairments and the rest of society.</li>
+                    <li class="div-li">Increased Accessibility:Enhances accessibility in various sectors like education, healthcare, and customer service.</li>
+                    <li class="div-li">Real-Time Assistance:Offers real-time translation for daily conversations, making communication faster and more effective.</li>
+                </div>
+            </div>    
+        </section>
+
+        <section id="sampleimage" class="sampleimage">
+            <p class="h1 sample-h1">SampleImage</p>
+            <p class="sample-p">Empowering communication through innovative technology.
+                Discover our cutting-edge sign language recognition system that bridges the gap between the deaf community and the world.</p>
+            <div class="sampleimage-grid">
+                <div class="card card-1">
+                    <img src="/static/Images/1.png" class="card-img-top" alt="Not loaded">
+                    <div class="card-body">
+                        <p class="card-text">Sample Image of Prediction B</p>
+                    </div>
+                </div>
+
+                <div class="card card-2 ">
+                    <img src="/static/Images/2.png" class="card-img-top" alt="Not loaded">
+                    <div class="card-body">
+                        <p class="card-text">Sample Image of Prediction A</p>
+                    </div>
+                </div>
+
+                <div class="card card-3">
+                    <img src="/static/Images/3.png" class="card-img-top"  alt="Not loaded">
+                    <div class="card-body">
+                        <p class="card-text">Sample Image of Prediction G</p>
+                    </div>
+                </div>
+
+                <div class="card card-4">
+                    <img src="/static/Images/4.png" class="card-img-top" alt="Not loaded">
+                    <div class="card-body">
+                        <p class="card-text">Sample Image of Prediction D</p>
+                    </div>
+                </div>
+
+                <div class="card card-5">
+                    <img src="/static/Images/5.png" class="card-img-top" alt="Not loaded">
+                    <div class="card-body">
+                        <p class="card-text">Sample Image of Prediction P</p>
+                    </div>
+                </div>
+
+                <div class="card card-6">
+                    <img src="/static/Images/6.png" class="card-img-top" alt="Not loaded">
+                    <div class="card-body">
+                        <p class="card-text">Sample Image of Prediction T</p>
+                    </div>
+                </div>
+
+                <div class="card card-7">
+                    <img src="/static/Images/7.png" class="card-img-top" alt="Not loaded">
+                    <div class="card-body">
+                        <p class="card-text">Sample Image of Prediction X</p>
+                    </div>
+                </div>
+
+                <div class="card card-8">
+                    <img src="/static/Images/8.png" class="card-img-top" alt="Not loaded">
+                    <div class="card-body">
+                        <p class="card-text">Sample Image of Prediction Y</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="prediction">
+            <div id="prediction-div" class="prediction">
+                <div class="prediction-1">
+                    <p class=h2>Implementation of project</p>
+                <p class="prediction-content">Sign language recognition systems process video or image data to identify patterns in hand gestures, facial expressions, and body movement. The steps typically include:</p>
+                <ul class="prediction-ul">
+                    <li class="prediction-li"><i class="bi bi-caret-right-fill"></i> Data Collection: Videos or images of sign language gestures are collected.</li>
+                    <li class="prediction-li"><i class="bi bi-caret-right-fill"></i> Feature Extraction: Hand, face, and pose data are analyzed using computer vision algorithms.</li>
+                    <li class="prediction-li"><i class="bi bi-caret-right-fill"></i> Pattern Recognition: Machine learning models identify and classify gestures.</li>
+                    <li class="prediction-li"><i class="bi bi-caret-right-fill"></i> Prediction: The system predicts the corresponding meaning in text or speech form.</li>
+                </ul>
+                </div>
+
+                <div class="prediction-2" style="color: white;">
+                    <div class="video-container">
+                        <img src="{{ url_for('video_feed') }}" alt="Video Feed">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <span class="footer_contact"><span>&copy Nanika | </span>Any queries contact through the <a href="mailto:kavinr707@gmail.com" class="footer-anchor"><i class="bi bi-person-square"></i> Mails</a></span>
+    </footer>
+</body>  
+</html>
